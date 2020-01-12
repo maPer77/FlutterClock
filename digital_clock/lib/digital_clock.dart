@@ -3,8 +3,6 @@
 // found in the LICENSE file.
 
 import 'dart:async';
-// import 'dart:ffi';
-
 import 'package:flutter_clock_helper/model.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
@@ -114,6 +112,7 @@ class _DigitalClockState extends State<DigitalClock> {
     final format = widget.model.is24HourFormat ? 24 : 12;
     final minute = DateFormat('mm').format(_dateTime);
     final second = DateFormat('ss').format(_dateTime);
+    final date = DateFormat.Md().format(_dateTime);
 
     // define color with ambient temperature
     double tempCalc;
@@ -138,20 +137,30 @@ class _DigitalClockState extends State<DigitalClock> {
     Color _corSS = HSLColor.fromAHSL(0.55, _corHUE, 1, 0.80).toColor();
 
     // define icons for _condition
-    if (_condition == "cloudy") {
-      _icon = Icons.cloud;
-    } else if (_condition == "foggy") {
-      _icon = Icons.texture;
-    } else if (_condition == "rainy") {
-      _icon = Icons.grain;
-    } else if (_condition == "snowy") {
-      _icon = Icons.ac_unit;
-    } else if (_condition == "sunny") {
-      _icon = Icons.wb_sunny;
-    } else if (_condition == "thunderstorm") {
-      _icon = Icons.flash_on;
-    } else if (_condition == "windy") {
-      _icon = Icons.flag;
+
+    switch (_condition) {
+      case "cloudy":
+        _icon = Icons.cloud;
+        break;
+      case "foggy":
+        _icon = Icons.texture;
+        break;
+      case "rainy":
+        _icon = Icons.grain;
+        break;
+      case "snowy":
+        _icon = Icons.ac_unit;
+        break;
+      case "sunny":
+        _icon = Icons.wb_sunny;
+        break;
+      case "thunderstorm":
+        _icon = Icons.flash_on;
+        break;
+      case "windy":
+        _icon = Icons.flag;
+        break;
+      default:
     }
 
     final weatherInfo = Column(
@@ -191,6 +200,15 @@ class _DigitalClockState extends State<DigitalClock> {
                   height: 1,
                 ),
               ),
+              Text(
+                date.toString(),
+                style: TextStyle(
+                  fontSize: 20,
+                  color: colors[_Element.text],
+                  fontWeight: FontWeight.w100,
+                  height: 1,
+                ),
+              ),
             ],
           ),
         ),
@@ -223,6 +241,7 @@ class _DigitalClockState extends State<DigitalClock> {
                 _condition[0].toUpperCase() + _condition.substring(1),
                 textAlign: TextAlign.center,
                 style: TextStyle(
+                  fontSize: 13,
                   color: colors[_Element.text],
                 ),
               ),
