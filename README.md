@@ -1,11 +1,15 @@
-# Digital Clock
+# Flutter Clock
 
-This app is an example of a digital clock.
-It has a light theme and a dark theme.
-See the [Analog Clock](../analog_clock) if you'd like an example that displays the weather and location.
+Welcome to Flutter Clock!
 
-<img src='digital.gif' width='350'>
+See [flutter.dev/clock](https://flutter.dev/clock) for how to get started, submission requirements, contest rules, and FAQs.
 
-<img src='digital_dark.png' width='350'>
+See a [live demo](https://maryx.github.io/flutter_clock) with Flutter for Web!
 
-<img src='digital_light.png' width='350'>
+Example [Analog Clock](analog_clock)
+
+<img src='analog_clock/analog.gif' width='350'>
+
+Example [Digital Clock](digital_clock)
+
+<img src='digital_clock/digital.gif' width='350'>
