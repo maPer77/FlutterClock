@@ -1,15 +1,21 @@
 # Flutter Clock
 
-Welcome to Flutter Clock!
+Welcome to my Flutter Clock!
 
-See [flutter.dev/clock](https://flutter.dev/clock) for how to get started, submission requirements, contest rules, and FAQs.
-
-See a [live demo](https://maryx.github.io/flutter_clock) with Flutter for Web!
-
-Example [Analog Clock](analog_clock)
-
-<img src='analog_clock/analog.gif' width='350'>
 
 Example [Digital Clock](digital_clock)
 
-<img src='digital_clock/digital.gif' width='350'>
+## 0°C
+<img src='digital_clock/00.jpg' width='350'>
+
+## 10°C
+<img src='digital_clock/10.jpg' width='350'>
+
+## 20°C
+<img src='digital_clock/20.jpg' width='350'>
+
+## 30°C
+<img src='digital_clock/30.jpg' width='350'>
+
+## 40°C
+<img src='digital_clock/40.jpg' width='350'>
