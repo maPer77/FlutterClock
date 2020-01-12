@@ -1,11 +1,24 @@
-# Digital Clock
+# My Flutter Clock
 
-This app is an example of a digital clock.
-It has a light theme and a dark theme.
-See the [Analog Clock](../analog_clock) if you'd like an example that displays the weather and location.
+Welcome to my Flutter Clock!
 
-<img src='digital.gif' width='350'>
+Youtube
+https://youtu.be/sjRCkQf81ac
 
-<img src='digital_dark.png' width='350'>
 
-<img src='digital_light.png' width='350'>
+Example [Digital Clock](digital_clock)
+
+## 0°C
+<img src='00.png' width='800'>
+
+## 10°C
+<img src='10.png' width='800'>
+
+## 20°C
+<img src='20.png' width='800'>
+
+## 30°C
+<img src='30.png' width='800'>
+
+## 40°C
+<img src='40.png' width='800'>
