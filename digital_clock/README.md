@@ -6,7 +6,7 @@ Youtube
 https://youtu.be/sjRCkQf81ac
 
 
-Example [Digital Clock](digital_clock)
+Version WEB : https://maper77.github.io/flutterClock/
 
 ## 0°C
 <img src='00.png' width='800'>
